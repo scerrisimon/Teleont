@@ -1,0 +1,105 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <http://schema.org/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix to: <http://w3id.org/teleont#> .
+
+<http://w3id.org/teleont> a owl:Ontology ;
+              dc:title "Telecoms Ontology"@en.
+to:Person a owl:Class ;
+    rdfs:label "Person" ;
+    rdfs:comment "A Person." ;
+    rdfs:subClassOf foaf:Person .
+
+to:Communication a owl:Class ;
+    rdfs:label "Communication" ;
+    rdfs:comment "A digital communication." .
+
+to:Infrastructure a owl:Class ;
+    rdfs:label "Infrastructure" ;
+    rdfs:comment "Infrastructure supporting a digital communication." .
+    
+to:Tower a owl:Class ;
+    rdfs:label "Tower" ;
+    rdfs:comment "Tower facilitating a digital communication." .
+        
+to:Connection a owl:Class ;
+    rdfs:label "Connection" ;
+    rdfs:comment "A communication channel over which a communication is taking place." .
+    
+to:Data a owl:Class ;
+    rdfs:label "Data" ;
+    rdfs:comment "Broadband communication channel." ;
+    rdfs:subClassOf to:Connection .
+    
+to:Landline a owl:Class ;
+    rdfs:label "Data" ;
+    rdfs:comment "Landline communication channel." ;
+    rdfs:subClassOf to:Connection .
+         
+to:3G a owl:Class ;
+    rdfs:label "Data" ;
+    rdfs:comment "3G Broadband communication channel." ;
+    rdfs:subClassOf to:Data .
+    
+to:4G a owl:Class ;
+    rdfs:label "Data" ;
+    rdfs:comment "4G Broadband communication channel." ;
+    rdfs:subClassOf to:Data .    
+     
+to:5G a owl:Class ;
+    rdfs:label "Data" ;
+    rdfs:comment "5G Broadband communication channel." ;
+    rdfs:subClassOf to:Data .
+        
+to: a owl:Class ;
+    rdfs:label "Infrastructure" ;
+    rdfs:comment "Infrastructure supporting a digital communication." .
+
+to:AsynchronousCommunication a owl:Class ;
+    rdfs:label "Qualification" ;
+    rdfs:comment "Asynchronous Communication." ;
+    rdfs:subClassOf to:Communication .
+
+to:SynchronousCommunication a owl:Class ;
+    rdfs:label "Qualification" ;
+    rdfs:comment "Synchronous Communication." ;
+    rdfs:subClassOf to:Communication .
+
+to:connects a rdf:Property ;
+    rdfs:label "Connects" ;
+    rdfs:comment "Persons connected by an active Communication." ;
+    rdfs:domain to:Communication ;
+    rdfs:range to:Person .
+
+    
+to:facilitates a rdf:Property ;
+    rdfs:label "Facilitates" ;
+    rdfs:comment "Infrastructure facilitating an active Communication." ;
+    rdfs:domain to:Infrastructure ;
+    rdfs:range to:Communication .
+    
+to:usesChannel a rdf:Property ;
+    rdfs:label "Facilitates" ;
+    rdfs:comment "Channel facilitating a Communication." ;
+    rdfs:domain to:Communication ;
+    rdfs:range to:Channel .
+    
+to:currentConnections a rdf:Property ;
+    rdfs:label "Current Connections" ;
+    rdfs:comment "The amount of users currently connected." ;
+    rdfs:domain to:Infrastructure ;
+    rdfs:range xsd:integer .
+
+to:peakConnections a rdf:Property ;
+    rdfs:label "Peak Connections" ;
+    rdfs:comment "The peak amount of simultaneously connected users." ;
+    rdfs:domain to:Infrastructure ;
+    rdfs:range xsd:integer .
+
+
