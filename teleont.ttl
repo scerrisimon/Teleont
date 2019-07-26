@@ -24,9 +24,11 @@ to:Infrastructure a owl:Class ;
     rdfs:label "Infrastructure" ;
     rdfs:comment "Infrastructure supporting a digital communication." .
     
+    
 to:Tower a owl:Class ;
     rdfs:label "Tower" ;
-    rdfs:comment "Tower facilitating a digital communication." .
+    rdfs:comment "Tower facilitating a digital communication." ;
+    rdfs:subClassOf to:Infrastructure .
         
 to:Connection a owl:Class ;
     rdfs:label "Connection" ;
