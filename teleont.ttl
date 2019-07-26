@@ -24,7 +24,10 @@ to:Infrastructure a owl:Class ;
     rdfs:label "Infrastructure" ;
     rdfs:comment "Infrastructure supporting a digital communication." .
     
-    
+to:TESTCLASS a owl:Class ;
+    rdfs:label "Mower" ;
+    rdfs:comment "Mower facilitating a digital communication." .
+
 to:Tower a owl:Class ;
     rdfs:label "Tower" ;
     rdfs:comment "Tower facilitating a digital communication." ;
@@ -99,5 +102,3 @@ to:peakConnections a rdf:Property ;
     rdfs:comment "The peak amount of simultaneously connected users." ;
     rdfs:domain to:Infrastructure ;
     rdfs:range xsd:integer .
-
-
