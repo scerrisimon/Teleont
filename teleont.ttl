@@ -59,10 +59,6 @@ to:5G a owl:Class ;
     rdfs:comment "5G Broadband communication channel." ;
     rdfs:subClassOf to:Data .
         
-to: a owl:Class ;
-    rdfs:label "Infrastructure" ;
-    rdfs:comment "Infrastructure supporting a digital communication." .
-
 to:AsynchronousCommunication a owl:Class ;
     rdfs:label "Qualification" ;
     rdfs:comment "Asynchronous Communication." ;
