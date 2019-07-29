@@ -29,9 +29,9 @@ to:Tower a owl:Class ;
     rdfs:comment "Tower facilitating a digital communication." ;
     rdfs:subClassOf to:Infrastructure .
 
-to:Mower a owl:Class ;
-    rdfs:label "Mower" ;
-    rdfs:comment "Mower facilitating a digital communication." ;
+to:Bower a owl:Class ;
+    rdfs:label "Bower" ;
+    rdfs:comment "Bower facilitating a digital communication." ;
     rdfs:subClassOf to:Infrastructure .
         
 to:Connection a owl:Class ;
