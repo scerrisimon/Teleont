@@ -39,22 +39,22 @@ to:Data a owl:Class ;
     rdfs:subClassOf to:Connection .
     
 to:Landline a owl:Class ;
-    rdfs:label "Data" ;
+    rdfs:label "Landline" ;
     rdfs:comment "Landline communication channel." ;
     rdfs:subClassOf to:Connection .
          
 to:3G a owl:Class ;
-    rdfs:label "Data" ;
+    rdfs:label "3G" ;
     rdfs:comment "3G Broadband communication channel." ;
     rdfs:subClassOf to:Data .
     
 to:4G a owl:Class ;
-    rdfs:label "Data" ;
+    rdfs:label "4G" ;
     rdfs:comment "4G Broadband communication channel." ;
     rdfs:subClassOf to:Data .    
      
 to:5G a owl:Class ;
-    rdfs:label "Data" ;
+    rdfs:label "5G" ;
     rdfs:comment "5G Broadband communication channel." ;
     rdfs:subClassOf to:Data .
         
@@ -69,32 +69,32 @@ to:SynchronousCommunication a owl:Class ;
     rdfs:subClassOf to:Communication .
 
 to:connects a rdf:Property ;
-    rdfs:label "Connects" ;
+    rdfs:label "connects" ;
     rdfs:comment "Persons connected by an active Communication." ;
     rdfs:domain to:Communication ;
     rdfs:range to:Person .
 
     
 to:facilitates a rdf:Property ;
-    rdfs:label "Facilitates" ;
+    rdfs:label "facilitates" ;
     rdfs:comment "Infrastructure facilitating an active Communication." ;
     rdfs:domain to:Infrastructure ;
     rdfs:range to:Communication .
     
 to:usesChannel a rdf:Property ;
-    rdfs:label "Facilitates" ;
+    rdfs:label "usesChannel" ;
     rdfs:comment "Channel facilitating a Communication." ;
     rdfs:domain to:Communication ;
     rdfs:range to:Channel .
     
 to:currentConnections a rdf:Property ;
-    rdfs:label "Current Connections" ;
+    rdfs:label "current connections" ;
     rdfs:comment "The amount of users currently connected." ;
     rdfs:domain to:Infrastructure ;
     rdfs:range xsd:integer .
 
 to:peakConnections a rdf:Property ;
-    rdfs:label "Peak Connections" ;
+    rdfs:label "peak connections" ;
     rdfs:comment "The peak amount of simultaneously connected users." ;
     rdfs:domain to:Infrastructure ;
     rdfs:range xsd:integer .
