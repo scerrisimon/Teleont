@@ -28,6 +28,11 @@ to:TESTCLASS a owl:Class ;
     rdfs:label "Mower" ;
     rdfs:comment "Mower facilitating a digital communication." .
 
+    
+to:TESTCLASS3 a owl:Class ;
+    rdfs:label "Bower" ;
+    rdfs:comment "Bower facilitating a digital communication." .
+
 to:Tower a owl:Class ;
     rdfs:label "Tower" ;
     rdfs:comment "Tower facilitating a digital communication." ;
