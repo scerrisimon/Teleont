@@ -24,15 +24,6 @@ to:Infrastructure a owl:Class ;
     rdfs:label "Infrastructure" ;
     rdfs:comment "Infrastructure supporting a digital communication." .
     
-to:TESTCLASS a owl:Class ;
-    rdfs:label "Mower" ;
-    rdfs:comment "Mower facilitating a digital communication." .
-
-    
-to:TESTCLASS3 a owl:Class ;
-    rdfs:label "Bower" ;
-    rdfs:comment "Bower facilitating a digital communication." .
-
 to:Tower a owl:Class ;
     rdfs:label "Tower" ;
     rdfs:comment "Tower facilitating a digital communication." ;
@@ -68,12 +59,12 @@ to:5G a owl:Class ;
     rdfs:subClassOf to:Data .
         
 to:AsynchronousCommunication a owl:Class ;
-    rdfs:label "Qualification" ;
+    rdfs:label "Asynchronous Communication" ;
     rdfs:comment "Asynchronous Communication." ;
     rdfs:subClassOf to:Communication .
 
 to:SynchronousCommunication a owl:Class ;
-    rdfs:label "Qualification" ;
+    rdfs:label "SynchronousCommunication" ;
     rdfs:comment "Synchronous Communication." ;
     rdfs:subClassOf to:Communication .
 
